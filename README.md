@@ -1,12 +1,12 @@
-# 🔐 Port Scanner
+#Port Scanner
 
 A beginner-friendly Python port scanner for learning cybersecurity.
 
-## 🚀 Features
+## Features-
 - Scans ports in a given range
 - Displays open ports
 - Handles errors gracefully
 
-## ▶️ Usage
+## Usage-
 ```bash
 python3 port_scanner.py# port-scanner
