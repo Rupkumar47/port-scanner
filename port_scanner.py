@@ -2,8 +2,8 @@ import socket
 
 def scan_ports(target, start_port=1, end_port=100):
     print("=" * 50)
-    print(f"🔍 Scanning Target: {target}")
-    print(f"📡 Port Range: {start_port} - {end_port}")
+    print(f"Scanning Target: {target}")
+    print(f"Port Range: {start_port} - {end_port}")
     print("=" * 50)
 
     open_ports = []
@@ -22,22 +22,22 @@ def scan_ports(target, start_port=1, end_port=100):
             sock.close()
 
     except KeyboardInterrupt:
-        print("\n❌ Scan interrupted by user")
+        print("\n Scan interrupted by user")
         return
     except socket.gaierror:
-        print("\n❌ Hostname could not be resolved")
+        print("\n Hostname could not be resolved")
         return
     except socket.error:
-        print("\n❌ Could not connect to server")
+        print("\n Could not connect to server")
         return
 
     print("\n" + "=" * 50)
-    print("✅ Scan Completed")
+    print("Scan Completed")
 
     if open_ports:
-        print(f"🔓 Open Ports: {open_ports}")
+        print(f" Open Ports: {open_ports}")
     else:
-        print("🔒 No open ports found")
+        print(" No open ports found")
 
     print("=" * 50)
 
