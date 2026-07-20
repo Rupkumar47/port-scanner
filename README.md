@@ -1,4 +1,4 @@
-Port Scanner
+* Port Scanner
 
 A beginner-friendly Python port scanner for learning cybersecurity.
 
